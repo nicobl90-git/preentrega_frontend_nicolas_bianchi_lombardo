@@ -1,0 +1,133 @@
+header {
+
+    background-color: yellow;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold
+}
+
+body {
+   font-family: "Raleway", sans-serif;
+}
+
+.titulo {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #2c3e50;
+}
+
+.bg-primario {
+    background-color: gray;
+}
+
+.media-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+    gap: 20px; /* Espacio entre las columnas */
+}
+
+.form-and-table {
+    display: grid;
+    grid-template-rows: auto auto; /* Dos filas de igual tamaño */
+    gap: 20px; /* Espacio entre las filas */
+    justify-items: center;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre los elementos del formulario */
+    width: 300px; /* Ancho del formulario */
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.productos .titulo {
+    width: 100%;
+}
+
+.tarjeta {
+    width: 260px;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;   /* apila los elementos de adentro verticalmente */
+    text-align: center;
+    font-family: 'Raleway', sans-serif;  /* tu fuente externa */
+}
+
+.tarjeta-img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.tarjeta-precio {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+
+footer {
+
+    background-color: yellow;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold
+}
+
+footer i {
+  font-size: 30px;
+}
+
+
+
+
+/* ========================================= */
+/* MEDIA QUERIES                              */
+/* ========================================= */
+
+/* Pantallas chicas: hasta 600px (celulares) */
+@media only screen and (max-width: 600px) {
+    .media-section {
+        grid-template-columns: 1fr; /* 1 sola columna */
+    }
+
+    .input-form {
+        width: 90%; /* en vez de 300px fijo, ocupa el 90% de lo disponible */
+    }
+
+    .titulo {
+        font-size: 1.3rem; /* títulos un poco más chicos */
+    }
+}
+
+/* Pantallas medianas: de 601px a 900px (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .media-section {
+        grid-template-columns: 1fr 1fr; /* se mantienen las 2 columnas */
+    }
+
+    .input-form {
+        width: 280px;
+    }
+}
