@@ -71,7 +71,7 @@ p {
     display: flex;
     flex-direction: column;   /* apila los elementos de adentro verticalmente */
     text-align: center;
-    font-family: 'Raleway', sans-serif;  /* tu fuente externa */
+    font-family: 'Raleway', sans-serif;  /* fuente externa */
 }
 
 .tarjeta-img {
