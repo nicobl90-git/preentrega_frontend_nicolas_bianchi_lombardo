@@ -7,3 +7,5 @@ Página con Inicio, Productos y Contacto
 -Edito los títulos, subtítulos y párrafos con información relevante
 
 -Agrego los hipervínculos para navegar por las páginas
+
+-Agrego un fondo de pantalla, modifico los estilos y corrijo detalles de las páginas y formatos.

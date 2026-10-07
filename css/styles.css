@@ -1,13 +1,38 @@
-header {
+header, footer {
 
-    background-color: yellow;
+    background-color: #e8e2d0;
+    color: #3d3226;
     text-align: center;
     font-style: italic;
     font-weight: bold
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-family: "Playfair Display", serif;
+}
+
+header p {
+    flex-grow: 1;
+    text-align: center;
 }
 
 body {
-   font-family: "Raleway", sans-serif;
+    font-family: "Raleway", sans-serif;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../utils/img/fondo2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+main section {
+    margin-bottom: 60px;
 }
 
 .titulo {
@@ -19,12 +44,18 @@ p {
 }
 
 .nav-list {
-  list-style: none;
+    list-style-type: none;
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
 }
 
 .nav-list a {
   text-decoration: none;
-  color: #2c3e50;
+  color: #f0ead6;
 }
 
 .bg-primario {
@@ -35,6 +66,12 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
     gap: 20px; /* Espacio entre las columnas */
+}
+
+.media-section video,
+.media-section iframe {
+    width: 100%;     /* ocupan todo el ancho de su columna */
+    height: 100%;     /* se adaptan a la altura que Grid les da */
 }
 
 .form-and-table {
@@ -86,18 +123,13 @@ p {
     margin-top: 8px;
 }
 
-
-footer {
-
-    background-color: yellow;
-    text-align: center;
-    font-style: italic;
-    font-weight: bold
-}
-
 footer i {
-  font-size: 30px;
+    font-size: 30px;
 }
+
+.icono-whatsapp { color: #25D366; }
+.icono-instagram { color: #E1306C; }
+.icono-youtube { color: #FF0000; }
 
 
 
@@ -129,5 +161,11 @@ footer i {
 
     .input-form {
         width: 280px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .media-section {
+        grid-template-columns: 1fr;
     }
 }
