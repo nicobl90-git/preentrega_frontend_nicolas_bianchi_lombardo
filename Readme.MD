@@ -9,3 +9,5 @@ Página con Inicio, Productos y Contacto
 -Agrego los hipervínculos para navegar por las páginas
 
 -Agrego un fondo de pantalla, modifico los estilos y corrijo detalles de las páginas y formatos.
+
+-Agrego media queries para la nav list y el form de contacto (adaptado para celular)

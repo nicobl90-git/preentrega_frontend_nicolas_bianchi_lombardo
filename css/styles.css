@@ -123,6 +123,12 @@ p {
     margin-top: 8px;
 }
 
+.input-form input,
+.input-form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
 footer i {
     font-size: 30px;
 }
@@ -151,6 +157,13 @@ footer i {
     .titulo {
         font-size: 1.3rem; /* títulos un poco más chicos */
     }
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 }
 
 /* Pantallas medianas: de 601px a 900px (tablets) */
@@ -161,11 +174,5 @@ footer i {
 
     .input-form {
         width: 280px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .media-section {
-        grid-template-columns: 1fr;
     }
 }
